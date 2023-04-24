@@ -1,9 +1,17 @@
+:root {
+    --white-color: hsl(0, 0%, 100%);
+    --light-grey: hsl(217, 12%, 63%);
+    --medium-grey: #19202a9b;
+    --dark-blue: hsl(213, 19%, 18%);
+    --very-dark-blue: hsl(216, 12%, 8%);
+    --orange-color: hsl(25, 97%, 53%);
+}
+
 body {
-    background-color: hsl(216, 12%, 8%) 
+    background: var(--very-dark-blue);  
 }
 
 .main-coitainer {
-
     position: absolute;
     width: 30%;
     height: 65%;
@@ -12,21 +20,17 @@ body {
     transform: translate(-50%, -50%);
     margin: 0 auto;
     padding: 2em;
-    /* flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: left; */
     border-radius: 1em;
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
     font-family: 'Overpass', sans-serif;
-    background-color: hsl(213, 19%, 18%);
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    background: var(--dark-blue);
 }
 
 .img-star {
     padding: 1rem;
     border-radius: 2em;
     border: 0.8px solid #5656560f;
-    background-color: #19202a9b;
+    background: var(--medium-grey)
 }
 
 .main-title {
@@ -57,13 +61,13 @@ body {
     border: none;
     cursor: pointer;
     color: hsl(217, 12%, 63%);
-    background-color: #19202a9b;
+    background: var(--medium-grey)
 }
 
 .bottom:hover {
     transition: 0.3s;
     color: hsl(0, 0%, 100%);
-    background-color: hsl(25, 97%, 53%);
+    background: var(--orange-color);
 }
 
 
@@ -79,11 +83,11 @@ body {
     font-size: 14px;
     padding: 0.5rem;
     color: hsl(0, 0%, 100%);
-    background-color: hsl(25, 97%, 53%);
+    background: var(--orange-color);
 }
 
 .send-button:hover {
     transition: 0.3s;
     color: hsl(25, 97%, 53%);
-    background-color: hsl(0, 0%, 100%);
+    background:var(--white-color);
 }
