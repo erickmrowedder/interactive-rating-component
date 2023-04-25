@@ -17,12 +17,11 @@ body {
 .main-container {
     position: absolute;
     width: 30%;
-    height: 60%;
+    height: 65%;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    margin: 0 auto;
-    padding: 2em;
+    padding: 1.5em;
     border-radius: 1em;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
     background: var(--dark-blue);
@@ -34,11 +33,15 @@ body {
     border: 0.8px solid #5656560f;
     background: var(--medium-grey)
 }
+.intro-container {
+    display: flex;
+    flex-direction: column;
+}
 
 .main-title {
     font-size: 25px;
     font-weight: 700;
-    margin-top: 1rem;
+    margin-top: 1.8rem;
     margin-bottom: 1rem;
     color: hsl(0, 0%, 100%);
 }
@@ -47,19 +50,18 @@ body {
     font-size: 14px;
     font-weight: 400;
     margin-bottom: 1.5rem;
-    line-height: 1.3rem;
     color:hsl(216, 12%, 54%);
 }
 
 .btn-container {
     display: flex;
     justify-content: space-around;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 .btn-class {
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 2.8rem;
+    height: 2.8rem;
     border-radius: 50%;
     border: none;
     cursor: pointer;
@@ -73,6 +75,12 @@ body {
     background: var(--orange-color);
 }
 
+.btn-class:focus {
+    color: hsl(0, 0%, 100%);
+    background: var(--orange-color);
+}
+
+
 
 .send-btn-class {
     width: 90%;
@@ -84,7 +92,7 @@ body {
     text-transform: uppercase;
     font-weight: 400;
     font-size: 14px;
-    padding: 0.5rem;
+    padding: 0.7rem;
     color: hsl(0, 0%, 100%);
     background: var(--orange-color);
 }
@@ -106,8 +114,7 @@ body {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    margin: 0 auto;
-    padding: 2em;
+    padding: 1.5em;
     flex-direction: column;
     justify-content: center;
     align-items: center;
