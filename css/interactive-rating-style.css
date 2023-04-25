@@ -8,27 +8,29 @@
 }
 
 body {
+    font-family: 'Overpass', sans-serif;
     background: var(--very-dark-blue);  
 }
 
-.main-coitainer {
+/* Tela 1 */
+
+.main-container {
     position: absolute;
     width: 30%;
-    height: 65%;
+    height: 60%;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     margin: 0 auto;
     padding: 2em;
     border-radius: 1em;
-    font-family: 'Overpass', sans-serif;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
     background: var(--dark-blue);
 }
 
 .img-star {
-    padding: 1rem;
-    border-radius: 2em;
+    padding: 0.8rem;
+    border-radius: 50%;
     border: 0.8px solid #5656560f;
     background: var(--medium-grey)
 }
@@ -49,29 +51,30 @@ body {
     color:hsl(216, 12%, 54%);
 }
 
-.bottom-container {
+.btn-container {
     display: flex;
     justify-content: space-around;
     margin-bottom: 2rem;
 }
 
-.bottom {
-    padding: 0.8rem;
-    border-radius: 1rem;
+.btn-class {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
     border: none;
     cursor: pointer;
     color: hsl(217, 12%, 63%);
-    background: var(--medium-grey)
+    background: var(--medium-grey);
 }
 
-.bottom:hover {
+.btn-class:hover {
     transition: 0.3s;
     color: hsl(0, 0%, 100%);
     background: var(--orange-color);
 }
 
 
-.send-button {
+.send-btn-class {
     width: 90%;
     display: flex;
     margin: 0 auto;
@@ -86,8 +89,63 @@ body {
     background: var(--orange-color);
 }
 
-.send-button:hover {
+.send-btn-class:hover {
     transition: 0.3s;
+    cursor: pointer;
     color: hsl(25, 97%, 53%);
     background:var(--white-color);
+}
+
+/* Tela 2 */
+
+.thanks-container {
+    display: none;
+    position: absolute;
+    width: 30%;
+    height: 60%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    padding: 2em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    border-radius: 1em;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    background: var(--dark-blue);           
+}
+
+.main-img {
+    display: flex;
+    padding-bottom: 1rem;
+    margin: 0 auto;
+}
+
+.information-field {
+    color: hsl(25, 97%, 53%);
+    background: var(--medium-grey); 
+    width: 180px;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 10px;
+    border-radius: 1rem;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.word-thanks {
+    font-size: 25px;
+    font-weight: 700;
+    padding: 1rem;
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+}
+
+.description-txt {
+    text-align: center;
+    line-height: 1.3rem;
+    font-size: 14px;
+    color: hsl(216, 12%, 54%);
 }
