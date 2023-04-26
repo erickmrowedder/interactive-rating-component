@@ -1,10 +1,10 @@
 :root {
     --white-color: hsl(0, 0%, 100%);
-    --light-grey: hsl(217, 12%, 63%);
-    --medium-grey: #19202a9b;
-    --dark-blue: hsl(213, 19%, 18%);
+    --light-grey: hsl(218, 12%, 54%);
+    --medium-grey: hsla(216, 13%, 23%, 0.608);
+    --dark-blue: hsl(212, 16%, 15%);
     --very-dark-blue: hsl(216, 12%, 8%);
-    --orange-color: hsl(25, 97%, 53%);
+    --orange-color: hsl(25, 99%, 54%);
 }
 
 body {
@@ -63,7 +63,7 @@ body {
     width: 2.8rem;
     height: 2.8rem;
     border-radius: 50%;
-    border: none;
+    border: 0.8px solid #5656560f;
     cursor: pointer;
     color: hsl(217, 12%, 63%);
     background: var(--medium-grey);
@@ -77,10 +77,8 @@ body {
 
 .btn-class:focus {
     color: hsl(0, 0%, 100%);
-    background: var(--orange-color);
+    background: var(--light-grey);
 }
-
-
 
 .send-btn-class {
     width: 90%;
@@ -131,8 +129,6 @@ body {
 }
 
 .information-field {
-    color: hsl(25, 97%, 53%);
-    background: var(--medium-grey); 
     width: 180px;
     font-size: 14px;
     font-weight: 400;
@@ -140,6 +136,8 @@ body {
     border-radius: 1rem;
     text-align: center;
     margin: 0 auto;
+    color: hsl(25, 97%, 53%);
+    background: var(--medium-grey); 
 }
 
 .word-thanks {
