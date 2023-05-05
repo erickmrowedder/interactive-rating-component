@@ -16,8 +16,8 @@ body {
 
 .main-container {
     position: absolute;
-    width: 30%;
-    height: 65%;
+    width: 35%;
+    height: 70%;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -27,15 +27,19 @@ body {
     background: var(--dark-blue);
 }
 
+.intro-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
 .img-star {
     padding: 0.8rem;
     border-radius: 50%;
     border: 0.8px solid #5656560f;
-    background: var(--medium-grey)
-}
-.intro-container {
-    display: flex;
-    flex-direction: column;
+    margin-top: 10px;
+    margin-left: 1rem;
+    background: var(--medium-grey);
 }
 
 .main-title {
@@ -43,6 +47,7 @@ body {
     font-weight: 700;
     margin-top: 1.8rem;
     margin-bottom: 1rem;
+    margin-left: 1rem;
     color: hsl(0, 0%, 100%);
 }
 
@@ -65,6 +70,8 @@ body {
     border-radius: 50%;
     border: 0.8px solid #5656560f;
     cursor: pointer;
+    margin-top: 0.8rem;
+    margin-left: 8px;
     color: hsl(217, 12%, 63%);
     background: var(--medium-grey);
 }
@@ -75,7 +82,7 @@ body {
     background: var(--orange-color);
 }
 
-.btn-class:focus {
+.btn-class.selected {
     color: hsl(0, 0%, 100%);
     background: var(--light-grey);
 }
@@ -90,7 +97,7 @@ body {
     text-transform: uppercase;
     font-weight: 400;
     font-size: 14px;
-    padding: 0.7rem;
+    padding: 0.6rem;
     color: hsl(0, 0%, 100%);
     background: var(--orange-color);
 }
@@ -107,8 +114,8 @@ body {
 .thanks-container {
     display: none;
     position: absolute;
-    width: 30%;
-    height: 60%;
+    width: 35%;
+    height: 70%;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -116,7 +123,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: left;
     border-radius: 1em;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
     background: var(--dark-blue);           
@@ -124,6 +130,7 @@ body {
 
 .main-img {
     display: flex;
+    padding-top: 1.5rem;
     padding-bottom: 1rem;
     margin: 0 auto;
 }
