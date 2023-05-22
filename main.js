@@ -1,19 +1,38 @@
-const btnClass = document.querySelectorAll('.btn-class') // Const para botões
-const nSelected = document.querySelector('#n-selected') // Const para os números selecionados
-const sendBtn = document.querySelector('#send-btn') // Const para o submit 
-const tela1 = document.querySelector('.main-container') // Const para o container onde você seleciona o número
-const tela2 = document.querySelector('.thanks-container') // Const para o container que mostra o número selecionado
+const btnClass = document.querySelectorAll('.btn-class');
+const nSelected = document.querySelector('#n-selected');
+const sendBtn = document.querySelector('#send-btn');
+const tela1 = document.querySelector('.main-container');
+const tela2 = document.querySelector('.thanks-container');
+let selected;
 
-sendBtn.disabled = true; // Começa true para que o usuário não possa dar submit sem antes selecionar o número
+function addOrRemoveSelectedClass(nota) { 
+    var btn = document.querySelector("#nota" + nota);
+    if (btn.classList.contains(selected)) {
+        btn.classList.remove(selected);
+    } else {
+        if (selected) {
+            selected.classList.remove("selected");
+        }
+        btn.classList.add("selected");
+        selected = btn;
+        nSelected.innerHTML = nota;
+    }
+}
 
-btnClass.forEach((btn) => {
-    btn.addEventListener("click", () => { // Assim que clicado
-        nSelected.innerHTML = btn.innerHTML // ... O campo da mensagem (que é um span) recebe o valor do botão (O número selecionado)
-        sendBtn.disabled = false; // ... O campo de submit passa a ter o disabled false, podendo assim ser usado.
-    })
-})
+function addOrRemoveSendBtn(btn) {
+    sendBtn.disabled = true;
+    if (nSelected.innerHTML = btn.innerHTML) {
+        sendBtn.disabled = false;
+    } else {
+        sendBtn.disabled = true;
+    }
+}
 
-sendBtn.addEventListener("click", () => { // Assim que o submit é usado
-    tela1.style.display = "none" // ... A tela 1 fica com o display none
-    tela2.style.display = "block" // E a tela 2 aparece, com o display block.
-})
+function display() { 
+    tela1.style.display = "none"; 
+    tela2.style.display = "block"; 
+}
+
+
+
+
