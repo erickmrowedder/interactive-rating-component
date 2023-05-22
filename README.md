@@ -2,6 +2,9 @@
 
 ![Visualização do design para o desafio de codificação do componente de classificação interativa](./design/desktop-preview.jpg)
 
+Olá, tudo bem? Me chamo Erick Malaguez e resolvi vir aqui compartilhar a minha solução com vocês, espero que gostem.
+Abaixo mais informações sobre o desafio.
+
 ## Bem-vindo! 👋
 
 Obrigado por verificar este desafio de codificação de front-end.
